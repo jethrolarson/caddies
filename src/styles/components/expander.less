@@ -1,0 +1,19 @@
+.expander-title{
+    display: block;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.expander-title:after{
+    content: ' [+]';
+}
+.expander-content{
+    display: none;
+}
+.expander.isOn {
+    > .expander-title:after{
+        content: ' [-]';
+    }
+    > .expander-content{
+        display: block;
+    }
+}

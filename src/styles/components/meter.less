@@ -1,0 +1,41 @@
+@import "../_base";
+.meter{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    background: #555;
+    position: relative;
+    user-select: none;
+    border-radius: @r;
+    overflow: hidden;
+    em{
+        z-index: +1;
+        display: block;
+        position: relative;
+        text-align: center;
+        pointer-events: none;
+        user-select: none;
+        font-size: 12px;
+        color: @fc_light;
+        opacity: 0;
+    }
+    &:hover em{
+        opacity: 1;
+    }
+    span{
+        position: absolute;
+        user-select: none;
+        border-radius: @r;
+        top: 0;
+        left: 0;
+        background-color: green;
+        width: 0;
+        display: block;
+        //transition: width .5s linear;
+        pointer-events: none;
+    }
+    &.on span{
+        //transition: width 1s linear;
+        //width: 100%;
+    }
+}

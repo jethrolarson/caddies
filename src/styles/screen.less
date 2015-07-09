@@ -1,0 +1,47 @@
+@import "_base";
+html{height: 100%;}
+body{
+    background-image: #fff;
+    padding: 0;
+    color: @fc;
+    height: 100%;
+}
+img{
+    -webkit-mask-box-image: url(http://www.webkit.org/blog-files/vignette-mask.png) 75 stretch;
+}
+h1{
+    margin-bottom: 0;
+}
+header{
+    border-bottom: @bc 1px solid;
+}
+
+#canvas{
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+grid{
+    display: flex;
+}
+cell{
+    display: flex;
+}
+
+centered{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-grow: 1;
+}
+shrink{
+    flex-basis: 0;
+}
+stack{
+    display: flex;
+    flex-direction: column;
+}
+
+a:visited{color: blue;}

@@ -1,0 +1,31 @@
+{
+  "name": "caddies",
+  "description": "asdf",
+  "author": "Jethro Larson and Jacob Larson",
+  "version": "0.0.1",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "coffee-script": "~1.7.1",
+    "coffeeify": "~0.6.0",
+    "connect": "~2.19.6",
+    "flyd": "^0.1.14",
+    "flyd-every": "0.0.1",
+    "gulp": "~3.5.6",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-browserify": "~0.5.0",
+    "gulp-coffee": "~1.4.1",
+    "gulp-connect": "~2.0.5",
+    "gulp-less": "~1.2.3",
+    "gulp-rename": "~1.2.0",
+    "gulp-util": "~2.2.14",
+    "ramda": "~0.15.0",
+    "seedrandom": "^2.4.2"
+  }
+}

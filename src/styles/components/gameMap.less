@@ -1,0 +1,31 @@
+@gameMap-cell-width: 40px;
+@gameMap-cell-borderColor: #aaa;
+@gameMap-cell-borderWidth: 1px;
+.gameMap{
+    position: relative;
+    margin: 100px;
+    display: inline-block;
+    border-bottom: @gameMap-cell-borderWidth solid @gameMap-cell-borderColor;
+    background-color: #269;
+    background-size: 20px 20px, 20px 20px; //also set in js
+    background-position: -1px -1px, -1px -1px;
+    background-image:
+      -webkit-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+      -webkit-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);
+
+}
+.gameMap-point{
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: help;
+}
+
+.gameMap-point--player{
+    background: green;
+}
+.gameMap-point--enemy{
+    background: red;
+}
